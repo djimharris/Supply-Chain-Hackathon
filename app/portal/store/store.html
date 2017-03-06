@@ -1,0 +1,39 @@
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="Bill of Lading #" ng-model="ladingno">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" ng-click="getDetails()">Search</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-show="searched">
+        <div class="col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">CONTAINER DETAILS</div>
+                <div class="panel-body">
+                    <table class="table">
+                        <tr>
+                           <th>Vessel Name</th>
+                           <th>Shipping Line</th>
+                           <th>Container #</th>
+                           <th>Bill of Lading #</th>
+                           <th>Container Size Type</th>
+                           <th>Estimated Arrival</th>
+                       </tr>
+                       <tr ng-repeat="x in details">
+                           <td>{{x.vesselName}}</td>
+                           <td>{{x.shippingLine}}</td>
+                           <td>{{x['container#']}}</td>
+                           <td>{{x['billOfLading#']}}</td>
+                           <td>{{x.containerSizeType}}</td>
+                           <td>{{x.estimatedVesselArrival}}</td>
+                       </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

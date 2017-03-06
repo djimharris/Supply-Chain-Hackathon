@@ -1,0 +1,30 @@
+{
+  "name": "jam_sc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "watchify app/app.js -o public/js/bundle.js --debug --verbose",
+    "start": "node startup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mkteh95@bitbucket.org/mkteh95/jam_sc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/mkteh95/jam_sc#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-ui-bootstrap": "^2.2.0",
+    "angular-ui-router": "^0.3.2",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.1.9",
+    "mongodb": "^2.2.11",
+    "path": "^0.12.7",
+    "winston": "^2.3.0"
+  }
+}

@@ -1,0 +1,83 @@
+<div class="jumbotron">
+    <uib-tabset>
+        <uib-tab index="1" heading="Post Arrival Import">
+            <form name="arrived">
+                <div class="form-group">
+                    <label for="vessel">Vessel Name</label>
+                    <input type="text"  class="form-control" name="arrived" placeholder="Vessel Name" ng-model="shipArrived">
+                </div>
+                <div class="form-group">
+                    <label for="terminal">Arriving Terminal</label>
+                    <input type="text"  class="form-control" name="arrived" placeholder="Arriving Terminal" ng-model="shipTerminal">
+                </div>
+                <button class="btn btn-primary" ng-click="hasArrived(shipArrived)" align="center">Submit</button>
+            </form>
+        </uib-tab>
+        <uib-tab index="2" heading="Post Arrival Import Data Entry">
+            <table class="table">
+               <tr>
+                   <th>Vessel Name</th>
+                   <th>Shipping Line</th>
+                   <th>Container #</th>
+                   <th>Lot Number</th>
+                   <th>Berth Number</th>
+                   <th>Last Day for Pick up</th>
+               </tr>
+               <tr ng-repeat="x in fillData">
+                   <td>{{x.vesselName}}</td>
+                   <td>{{x.shippingLine}}</td>
+                   <td>{{x['container#']}}</td>
+                   <td><input type="text" class="form-control" ng-model="x.lotNumber"></td>
+                   <td><input type="text" class="form-control" ng-model="x.berthNumber"></td>
+                   <td><input type="text" class="form-control" ng-model="x.lastDayForPickup"></td>
+                   <td><button class="btn btn-primary" ng-click="updateData(x)" align="center">Update</button></td>
+               </tr>
+
+
+            </table>
+        </uib-tab>
+        <uib-tab index="3" heading="View Imports">
+            <table class="table">
+               <tr>
+                   <th>Vessel Name</th>
+                   <th>Shipping Line</th>
+                   <th>Container #</th>
+                   <th>Bill of Lading #</th>
+                   <th>Container Size Type</th>
+                   <th>Estimated Arrival</th>
+               </tr>
+               <tr ng-repeat="x in imports">
+                   <td>{{x.vesselName}}</td>
+                   <td>{{x.shippingLine}}</td>
+                   <td>{{x['container#']}}</td>
+                   <td>{{x['billOfLading#']}}</td>
+                   <td>{{x.containerSizeType}}</td>
+                   <td>{{x.estimatedVesselArrival}}</td>
+               </tr>
+
+
+            </table>
+        </uib-tab>
+        <uib-tab index="4" heading="View Exports">
+            <table class="table">
+               <tr>
+                   <th>Vessel Name</th>
+                   <th>Shipping Line</th>
+                   <th>Container #</th>
+                   <th>Bill of Lading #</th>
+                   <th>Container Size Type</th>
+                   <th>Cargo Cutoff</th>
+               </tr>
+               <tr ng-repeat="x in exports">
+                   <td>{{x.vesselName}}</td>
+                   <td>{{x.shippingLine}}</td>
+                   <td>{{x['container#']}}</td>
+                   <td>{{x['billOfLading#']}}</td>
+                   <td>{{x.containerSizeType}}</td>
+                   <td>{{x.cargoCutoff}}</td>
+               </tr>
+
+            </table>
+        </uib-tab>
+    </uib-tabset>
+</div>

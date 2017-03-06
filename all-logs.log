@@ -1,0 +1,12 @@
+{"level":"info","message":"Express Server - Server is operational: :: 3000","timestamp":"2016-11-19T22:48:51.611Z"}
+{"level":"info","message":"MongoDb Server - Successfully connected to database!","timestamp":"2016-11-19T22:48:51.627Z"}
+{"level":"info","message":"ExportInfo Collection - Index creation is successful for id!","timestamp":"2016-11-19T22:48:51.638Z"}
+{"level":"info","message":"ImportInfo Collection - Index creation is successful for id!","timestamp":"2016-11-19T22:48:51.638Z"}
+{"level":"info","message":"DrayageRegistry Collection - Index creation is successful for id!","timestamp":"2016-11-19T22:48:51.638Z"}
+{"level":"info","message":"StakeholdersCollection Collection - Index creation is successful for id!","timestamp":"2016-11-19T22:48:51.639Z"}
+{"level":"info","message":"Express Server - Server is operational: :: 3000","timestamp":"2016-11-19T22:55:11.276Z"}
+{"level":"info","message":"MongoDb Server - Successfully connected to database!","timestamp":"2016-11-19T22:55:11.293Z"}
+{"level":"info","message":"ExportInfo Collection - Index creation is successful for id!","timestamp":"2016-11-19T22:55:11.304Z"}
+{"level":"info","message":"ImportInfo Collection - Index creation is successful for id!","timestamp":"2016-11-19T22:55:11.304Z"}
+{"level":"info","message":"DrayageRegistry Collection - Index creation is successful for id!","timestamp":"2016-11-19T22:55:11.304Z"}
+{"level":"info","message":"StakeholdersCollection Collection - Index creation is successful for id!","timestamp":"2016-11-19T22:55:11.304Z"}

@@ -1,0 +1,20 @@
+<div class="jumbotron">
+    <uib-tabset>
+        <h2>Account Approval</h2>
+        <table class="table">
+        	<tr>
+        		<th>Company Name</th>
+        		<th>Full Name</th>
+        		<th>Email</th>
+        	</tr>
+        	<tr ng-repeat="x in approvals">
+        		<td>{{x.company}}</td>
+        		<td>{{x.pointOfContact}}</td>
+        		<td>{{x.email}}</td>
+        		<td>
+        		     <button  class="btn btn-primary" ng-click="approveUser(x.userName)" align="center">Approve</button>
+        		</td>
+        	</tr>
+        </table>
+    </uib-tabset>
+</div>

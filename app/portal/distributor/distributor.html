@@ -1,0 +1,38 @@
+<div id="app-wrapper">
+    <nav id="header" class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" ui-sref="home">PortApp</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ui-sref="home.drayage">SIGN OUT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="content">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" placeholder="Bill of Lading #">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" ng-show="$ctrl.searched">
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">CONTAINER DETAILS</div>
+                        <div class="panel-body">
+                            <table class="table">
+                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

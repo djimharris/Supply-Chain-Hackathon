@@ -1,0 +1,59 @@
+.ng-scope {
+    height: inherit;    
+}
+
+#app-wrapper {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+#app-wrapper #content {
+    flex: 1;
+}
+
+#header.navbar {
+    margin-bottom: 0;
+}
+
+.center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron {
+    padding: 15px 30px !important;
+    border-radius: 7px;
+}
+
+.row {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
+
+.jumbotron > * {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.panel {
+    margin-bottom: 0 !important;
+}
+
+drayage, register, distributor, store, labor {
+    display:block;
+}
+
+drayage .jumbotron, register .jumbotron, distributor .jumbotron, store .jumbotron, labor .jumbotron {
+    width: 80%;
+}
+
+register .jumbotron {
+    width: 70%;
+}
+
+.blueBack
+{
+    background-color: #337ab7;
+}

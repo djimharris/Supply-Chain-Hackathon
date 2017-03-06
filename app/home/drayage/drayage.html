@@ -1,0 +1,57 @@
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="Container ID" ng-model="containerid">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" ng-click="search()">Search</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-show="searched">
+        <div ng-class="detailsWidth">
+            <div class="panel panel-default">
+                <div class="panel-heading">CONTAINER DETAILS</div>
+                <div class="panel-body">
+                    <div ng-if="toggle">
+                        <table class="table">
+                            <tr>
+                                <th>Cargo Type</th>
+                                <td>{{details.cargoType}}</td>
+                            </tr>
+                            <tr>
+                                <th>Container Size</th>
+                                <td>{{details.containerSizeType}}</td>
+                            </tr>
+                            <tr>
+                                <th>Lot Number</th>
+                                <td>{{details.lotNumber}}</td>
+                            </tr>
+                            <tr>
+                                <th>Berth Number</th>
+                                <td>{{details.berthNumber}}</td>
+                            </tr>
+                            <tr>
+                                <th>Last Day for Pickup</th>
+                                <td>{{details.lastDayForPickup}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div ng-if="!toggle">
+                        No results found.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6" ng-if="makeAppointment">
+            <div class="panel panel-default">
+                <div class="panel-heading">APPOINTMENT REQUEST</div>
+                <div class="panel-body">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

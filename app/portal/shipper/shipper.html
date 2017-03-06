@@ -1,0 +1,46 @@
+<div class="jumbotron">
+    <uib-tabset>
+        <uib-tab index="1" heading="Display Data">1</uib-tab>
+        <uib-tab index="2" heading="Make Booking">
+            <form name="booking">
+                <div class="form-group">
+                    <label for="vessel">Vessel Name</label>
+                    <input type="text" ng-model="vessel" class="form-control" name="vessel" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="text" ng-model="password" class="form-control" name="date" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="items">Items</label>
+                    <input type="text" class="form-control" name="items" placeholder="Items" ng-model="items">
+                </div>
+                <div class="form-group">
+                    <label for="port">Port</label>
+                    <input type="text" class="form-control" name="port" placeholder="Port" ng-model="port">
+                </div>
+                <button type="submit" class="btn btn-default" ng-click="registerUser()">Submit</button>
+            </form>
+        </uib-tab>
+        <uib-tab index="3" heading="Existing Bookings">
+            <table class="table"></table>
+        </uib-tab>
+        <uib-tab index="4" heading="Data Submission">
+            <form name="booking">
+                <div class="form-group">
+                    <label for="weight">Weight</label>
+                    <input type="text" ng-model="weight" class="form-control" name="weight" placeholder="Weight">
+                </div>
+                <div class="form-group">
+                    <label for="val">Value</label>
+                    <input type="text" ng-model="val" class="form-control" name="val" placeholder="Value">
+                </div>
+                <div class="form-group">
+                    <label for="items">Remarks</label>
+                    <textarea class="form-control" rows="3" ng-model="remarks" name="remarks"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default" ng-click="registerUser()">Submit</button>
+            </form>
+        </uib-tab>
+    </uib-tabset>
+</div>
